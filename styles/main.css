@@ -1,34 +1,61 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     align-content: center;
     background-color: white;
+    border: solid 1px;
     /* display: flex; */
 }
 
-.delete{
+.delete {
     border: none;
     background-color: transparent;
     text-decoration: underline;
 }
-.años{
+
+.money > .in{
+    border: solid 1px;
+    border-radius: 8px;
+    width: 200px;
+
+}
+
+.money>.icon {
+    background-color: #e6efea;
+    font-weight: 900;
+    position: relative;
+    border-radius: 4px 0 0 4px;
+    padding: .8rem 1rem;
+    top: 12px;
+    left: 1px;
+    bottom: 0;
+}
+
+ .in {
+    border: none;
+}
+
+.años {
     border: solid 1px;
     height: 40px;
     width: 200px;
     align-items: center;
     border-radius: 5px;
 }
-.porcentaje{
+
+.porcentaje {
     border: solid 1px;
     height: 40px;
     width: 200px;
     align-items: center;
     border-radius: 5px;
 }
-.button{
+
+.button {
     border-radius: 40px;
     border: none;
     background-color: transparent;
@@ -37,6 +64,6 @@
     height: 45px;
 }
 
-.result{
+.result {
     background-color: #133040;
 }
