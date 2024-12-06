@@ -3,9 +3,40 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    align-content: center;
+    background-color: white;
+    /* display: flex; */
+}
 
 .delete{
     border: none;
     background-color: transparent;
     text-decoration: underline;
+}
+.años{
+    border: solid 1px;
+    height: 40px;
+    width: 200px;
+    align-items: center;
+    border-radius: 5px;
+}
+.porcentaje{
+    border: solid 1px;
+    height: 40px;
+    width: 200px;
+    align-items: center;
+    border-radius: 5px;
+}
+.button{
+    border-radius: 40px;
+    border: none;
+    background-color: transparent;
+    background-color: #dbda30;
+    width: 210px;
+    height: 45px;
+}
+
+.result{
+    background-color: #133040;
 }
