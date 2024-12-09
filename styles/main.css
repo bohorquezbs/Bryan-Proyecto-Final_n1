@@ -2,13 +2,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* font-family:"Plus Jakarta sans", sans-serif ; */
 }
 
 .container {
     align-content: center;
     background-color: white;
     border: solid 1px;
-    /* display: flex; */
+}
+
+.flex {
+
+    align-items: center;
 }
 
 .delete {
@@ -17,26 +22,79 @@
     text-decoration: underline;
 }
 
-.money > .in{
-    border: solid 1px;
-    border-radius: 8px;
-    width: 200px;
-
+.money {
+    display: flex;
+    border: solid 2px;
+    width: 300px;
+    border-radius: 4px;
 }
 
-.money>.icon {
-    background-color: #e6efea;
+.icon {
+    background-color: #e6e6e6;
     font-weight: 900;
-    position: relative;
-    border-radius: 4px 0 0 4px;
     padding: .8rem 1rem;
-    top: 12px;
-    left: 1px;
-    bottom: 0;
+    border-radius: 4px 0 0 4px;
 }
 
- .in {
+.in {
+    padding: .8rem 1rem;
     border: none;
+    width: 256px;
+    cursor: pointer;
+}
+
+.money>.in {
+    border: none;
+}
+
+.icon>.in {
+    border: none;
+}
+
+.tiempo {
+    display: flex;
+    border: solid 2px;
+    width: 300px;
+    border-radius: 4px;
+}
+
+.term {
+    padding: .8rem 1rem;
+    border: none;
+    width: 256px;
+    cursor: pointer;
+}
+
+.anos {
+    background-color: #e6e6e6;
+    font-weight: 900;
+    padding: .8rem 1rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.rate {
+    display: flex;
+    border: solid 2px;
+    width: 300px;
+    border-radius: 4px;
+}
+
+.interes {
+    padding: .8rem 1rem;
+    border: none;
+    width: 256px;
+    cursor: pointer;
+}
+
+.rango {
+    background-color: #e6e6e6;
+    font-weight: 900;
+    padding: .8rem 1rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.estilos {
+    gap: 20px;
 }
 
 .años {
@@ -47,12 +105,18 @@
     border-radius: 5px;
 }
 
+.g{
+    text-align: center;
+    gap: 10px;
+}
+
 .porcentaje {
     border: solid 1px;
     height: 40px;
     width: 200px;
     align-items: center;
     border-radius: 5px;
+    display: flex;
 }
 
 .button {
@@ -62,6 +126,9 @@
     background-color: #dbda30;
     width: 210px;
     height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .result {
