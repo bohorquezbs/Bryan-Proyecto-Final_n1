@@ -5,118 +5,20 @@
     /* font-family:"Plus Jakarta sans", sans-serif ; */
 }
 
-.container {
-    align-content: center;
-    background-color: white;
-    border: solid 1px;
+main {
+    background-color: ;
 }
 
-.flex {
-
-    align-items: center;
+.container {
+    align-content: center;
+    background-color: coral;
+    border: solid 1px;
 }
 
 .delete {
     border: none;
     background-color: transparent;
     text-decoration: underline;
-}
-
-.money {
-    display: flex;
-    border: solid 2px;
-    width: 300px;
-    border-radius: 4px;
-}
-
-.icon {
-    background-color: #e6e6e6;
-    font-weight: 900;
-    padding: .8rem 1rem;
-    border-radius: 4px 0 0 4px;
-}
-
-.in {
-    padding: .8rem 1rem;
-    border: none;
-    width: 256px;
-    cursor: pointer;
-}
-
-.money>.in {
-    border: none;
-}
-
-.icon>.in {
-    border: none;
-}
-
-.tiempo {
-    display: flex;
-    border: solid 2px;
-    width: 300px;
-    border-radius: 4px;
-}
-
-.term {
-    padding: .8rem 1rem;
-    border: none;
-    width: 256px;
-    cursor: pointer;
-}
-
-.anos {
-    background-color: #e6e6e6;
-    font-weight: 900;
-    padding: .8rem 1rem;
-    border-radius: 0 4px 4px 0;
-}
-
-.rate {
-    display: flex;
-    border: solid 2px;
-    width: 300px;
-    border-radius: 4px;
-}
-
-.interes {
-    padding: .8rem 1rem;
-    border: none;
-    width: 256px;
-    cursor: pointer;
-}
-
-.rango {
-    background-color: #e6e6e6;
-    font-weight: 900;
-    padding: .8rem 1rem;
-    border-radius: 0 4px 4px 0;
-}
-
-.estilos {
-    gap: 20px;
-}
-
-.años {
-    border: solid 1px;
-    height: 40px;
-    width: 200px;
-    align-items: center;
-    border-radius: 5px;
-}
-
-.g{
-    text-align: center;
-    gap: 10px;
-}
-
-.porcentaje {
-    border: solid 1px;
-    height: 40px;
-    width: 200px;
-    align-items: center;
-    border-radius: 5px;
-    display: flex;
 }
 
 .button {
@@ -133,4 +35,5 @@
 
 .result {
     background-color: #133040;
+    width: 25%;
 }
