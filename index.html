@@ -27,78 +27,82 @@
 
 <body>
   <main>
-    <div class="container ">
-      <div class="row col-sm-12">
-        <div>
-          <h1>Mortgage Calculator</h1>
-          <button class="delete">Clear All</button>
+    <div class="container">
+      <h1>Mortgage Calculator</h1>
+      <button class="delete">Clear All</button>
 
-          <h2>Mortgage Amount</h2>
-          <div class="input-group mb-3 w-25 border border-dark rounded">
-            <span class="input-group-text" id="basic-addon1">£</span>
-            <input type="text" class="form-control" placeholder="" aria-label="Nombre de usuario"
-              aria-describedby="basic-addon1">
-          </div>
-          <h2>Mortgage Term</h2>
-          <div class="input-group mb-3 w-25 border border-dark rounded d-flex d-grid">
-            <input type="text" class="form-control" placeholder="" aria-label="Nombre de usuario"
-              aria-describedby="basic-addon1">
-            <span class="input-group-text" id="basic-addon1">years</span>
-          </div>
-          <h2>Interest Rate</h2>
-          <div class="input-group mb-3 w-25 border border-dark rounded">
-            <input type="text" class="form-control" placeholder="" aria-label="Nombre de usuario"
-              aria-describedby="basic-addon1">
-            <span class="input-group-text" id="basic-addon1">%</span>
-          </div>
-        </div>
-        <div>
-          <fieldset>
-            <legend>Mortgage Type</legend>
-            <div class="d-grid gap-3">
-              <div class="form-check border border-1 w-25 border border-dark rounded pt-3 align-content-center">
-                <input class="form-check-input align-items-center" type="radio" value="" id="defaultCheck1">
-                <label class="form-check-label align-items-center" for="defaultCheck1">
-                  Repayment
-                </label>
-              </div>
-              <div class="form-check border border-1 w-25 border border-dark rounded pt-3">
-                <input class="form-check-input" type="radio" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Interest Only
-                </label>
-              </div>
-            </div>
-          </fieldset>
-        </div class="calcu"><!-- aulan  -->
-        <div class="d-flex gap-3">
-          <button class="button gap-3"> <img src="./assets/images/icon-calculator.svg" alt=""> Calculate
-            Repayments</button>
-        </div>
+      <h2>Mortgage Amount</h2>
+      <div class="input-group mb-3 w-25 border border-dark rounded">
+        <span class="input-group-text" id="basic-addon1">£</span>
+        <input type="text" class="form-control" placeholder="" aria-label="Nombre de usuario"
+          aria-describedby="basic-addon1" max="1,000,000,000" min="1">
       </div>
-      <!-- Empty results start -->
-      <div class="result">
-        <img src="./assets/images/illustration-empty.svg" alt="">
-        <div>
-          <h2>Results shown here</h2>
-
-          <h2>Complete the form and click “calculate repayments” to see what
-            your monthly repayments would be.</h2>
-        </div>
+      <h2>Mortgage Term</h2>
+      <div class="input-group mb-3 w-25 border border-dark rounded d-flex d-grid">
+        <input type="text" class="form-control" placeholder="" aria-label="Nombre de usuario"
+          aria-describedby="basic-addon1">
+        <span class="input-group-text" id="basic-addon1">years</span>
       </div>
+      <h2>Interest Rate</h2>
+      <div class="input-group mb-3 w-25 border border-dark rounded">
+        <input type="text" class="form-control" placeholder="" aria-label="Nombre de usuario"
+          aria-describedby="basic-addon1">
+        <span class="input-group-text" id="basic-addon1">%</span>
+      </div>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Mortgage Type</legend>
+        <div class="d-grid gap-3">
+          <div class="form-check border border-1 w-25 border border-dark rounded pt-3 align-content-center">
+            <input class="form-check-input align-items-center" type="radio" value="" id="defaultCheck1">
+            <label class="form-check-label align-items-center" for="defaultCheck1">
+              Repayment
+            </label>
+          </div>
+          <div class="form-check border border-1 w-25 border border-dark rounded pt-3 align-baseline">
+            <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Interest Only
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div class="calcu">
+    <div class="d-flex gap-3 p-2">
+      <button class="button w-25"> <img src="./assets/images/icon-calculator.svg" alt=""> Calculate
+        Repayments</button>
+    </div>
+    </div>
+    <!-- Empty results start -->
+    <div class="results">
+      <img src="./assets/images/illustration-empty.svg" alt="">
+      <div class="start">
+        <h2>Results shown here</h2>
 
-      <!-- Empty results end -->
+        <h2>Complete the form and click “calculate repayments” to see what
+          your monthly repayments would be.</h2>
+      </div>
+    </div>
 
-      <!-- Completed results start -->
-      <div>
+    <!-- Empty results end -->
+
+    <!-- Completed results start -->
+    <div class="start">
+      <div class="total">
+
         <h2>Your results</h2>
 
         <p>Your results are shown below based on the information you provided.
           To adjust the results, edit the form and click “calculate repayments” again.</p>
 
-        <h2>Your monthly repayments</h2>
-
-        <h2>Total you'll repay over the term</h2>
+        <div class="result">
+          <h2>Your monthly repayments</h2>
+          <p>£2,000.00</p>
+          <hr class="bg-light">
+          <h2>Total you'll repay over the term</h2>
+          <p>£1,000</p>
+        </div>
       </div>
     </div>
   </main>

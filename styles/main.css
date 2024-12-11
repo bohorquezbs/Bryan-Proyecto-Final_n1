@@ -5,20 +5,31 @@
     /* font-family:"Plus Jakarta sans", sans-serif ; */
 }
 
-main {
-    background-color: ;
+.container {
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.container {
-    align-content: center;
-    background-color: coral;
-    border: solid 1px;
+.container h1 {
+    font-weight: 900;
+    color: #122f3f;
+    display: flex;
 }
 
 .delete {
     border: none;
     background-color: transparent;
     text-decoration: underline;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #4e6e7e;
+}
+
+.input-group {
+    flex-direction: column;
+    margin-bottom: 8px;
 }
 
 .button {
@@ -33,7 +44,27 @@ main {
     justify-content: center;
 }
 
-.result {
+.start {
+    color: white;
+
+}
+
+.results {
     background-color: #133040;
     width: 25%;
+}
+
+.total {
+    background-color: #133040;
+}
+
+.result {
+    position: relative;
+    background-color: #0b1c26;
+    padding: 1rem;
+    padding-top: 2rem;
+    width: 100%;
+    color: #9abed5;
+    border-top: 5px solid #d7da2f;
+    border-radius: 10px;
 }
